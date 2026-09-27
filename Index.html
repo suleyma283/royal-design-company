@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Royal Design Company</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Georgia, serif;
+            background: #f5efe6;
+            color: #3b2415;
+        }
+
+        header {
+            background: #4b2e1f;
+            color: #f5dfb5;
+            text-align: center;
+            padding: 35px 15px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 38px;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 17px;
+        }
+
+        nav {
+            background: #2f1b12;
+            text-align: center;
+            padding: 15px 5px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #f5dfb5;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 90px 20px;
+            background: #dcc3a0;
+        }
+
+        .hero h2 {
+            font-size: 42px;
+            margin: 0 0 15px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            max-width: 650px;
+            margin: 0 auto 30px;
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+            background: #6b4226;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .button:hover {
+            background: #3b2415;
+        }
+
+        section {
+            padding: 55px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 35px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .card {
+            background: #fffaf3;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(60, 35, 20, 0.15);
+        }
+
+        .card .icon {
+            font-size: 50px;
+        }
+
+        .card h3 {
+            font-size: 22px;
+            margin: 15px 0 10px;
+        }
+
+        .card p {
+            line-height: 1.5;
+        }
+
+        .about {
+            background: #ead9c2;
+            text-align: center;
+        }
+
+        .about p {
+            max-width: 750px;
+            margin: auto;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        .locations {
+            max-width: 700px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .locations p {
+            font-size: 18px;
+            margin: 12px;
+        }
+
+        .contact {
+            background: #4b2e1f;
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            color: #f5dfb5;
+        }
+
+        .contact p {
+            font-size: 17px;
+            margin: 15px;
+        }
+
+        .whatsapp {
+            display: inline-block;
+            margin-top: 20px;
+            background: #25D366;
+            color: white;
+            padding: 14px 25px;
+            border-radius: 7px;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+        }
+
+        footer {
+            background: #2f1b12;
+            color: #d9c2a5;
+            text-align: center;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 29px;
+            }
+
+            .hero h2 {
+                font-size: 32px;
+            }
+
+            nav a {
+                margin: 0 5px;
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>ROYAL DESIGN COMPANY</h1>
+    <p>Furniture • Interior Design • Quality & Elegance</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#products">Furniture</a>
+    <a href="#about">About</a>
+    <a href="#locations">Locations</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="home">
+
+    <h2>Beautiful Furniture for Beautiful Spaces</h2>
+
+    <p>
+        Discover quality furniture designed to bring comfort,
+        elegance and style to your home, office and business.
+    </p>
+
+    <a class="button" href="#products">Explore Furniture</a>
+
+</section>
+
+<section id="products">
+
+    <h2 class="section-title">Our Furniture</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <div class="icon">🛋️</div>
+            <h3>Sofas</h3>
+            <p>Comfortable and stylish sofas for modern living spaces.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🛏️</div>
+            <h3>Bedroom Furniture</h3>
+            <p>Beautiful beds and bedroom furniture for your home.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🍽️</div>
+            <h3>Dining Sets</h3>
+            <p>Elegant dining tables and chairs for memorable moments.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🚪</div>
+            <h3>Wardrobes</h3>
+            <p>Modern wardrobes designed for style and storage.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🪑</div>
+            <h3>Office Furniture</h3>
+            <p>Professional furniture for productive workspaces.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🪞</div>
+            <h3>Home Décor</h3>
+            <p>Beautiful pieces to complete the look of your space.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="about" id="about">
+
+    <h2 class="section-title">About Royal Design Company</h2>
+
+    <p>
+        Royal Design Company is a furniture and interior design company
+        focused on quality, comfort and elegant design. We provide
+        furniture solutions for homes, offices and businesses.
+    </p>
+
+</section>
+
+<section id="locations">
+
+    <h2 class="section-title">Our Locations</h2>
+
+    <div class="locations">
+
+        <p>📍 Dar es Salaam</p>
+        <p>📍 Mwanza</p>
+        <p>📍 Tabora</p>
+        <p>📍 Kilwa</p>
+        <p>📍 Dodoma</p>
+
+    </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+    <h2 class="section-title">Contact Us</h2>
+
+    <p>
+        👤 <strong>Chief Executive Officer</strong><br>
+        +255 622 253 585
+    </p>
+
+    <p>
+        👤 <strong>Deputy Chief Executive Officer</strong><br>
+        +255 634 087 871
+    </p>
+
+    <a class="whatsapp"
+       href="https://wa.me/255622253585"
+       target="_blank">
+        💬 Chat with us on WhatsApp
+    </a>
+
+</section>
+
+<footer>
+
+    <p>© 2026 Royal Design Company. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
